@@ -1,8 +1,7 @@
 // import logo from './logo.svg';
 
 import './App.css';
-import './components/Header'
-
+import {Card} from "react-bootstrap"
 
 
 function Produit(props) {
@@ -23,17 +22,54 @@ function Fiche(props) {
   </div>
 }
 
-function App() {
-  return (
-    <div>
+//function App() {
 
+const App =() => {
+  const cardInfo = [
+      {
+        image: "https://placekitten.com/100/100", 
+        title: "Test", 
+        text: "Hey" 
+      },
+      {
+        image: "https://placekitten.com/100/100", 
+        title: "Test", 
+        text: "Hey" 
+      },
+      {
+        image: "https://placekitten.com/100/100", 
+        title: "Test", 
+        text: "Hey" 
+      },
+      {
+        image: "https://placekitten.com/100/100", 
+        title: "Test", 
+        text: "Hey" 
+      }, 
+  ];
+
+  const renderCard = (card, index) => {
+    return (
+      <Card style={{ width: '18rem' }} key={index} className="box">
+              <Card.Img variant="top" src="holder.js/100px180" src={card.image}/>
+              <Card.Body>
+                <Card.Title>{card.title}</Card.Title>
+                <Card.Text>{card.text}</Card.Text>
+              </Card.Body>
+          </Card>
+    );
+  };
+  
+    return <div>{cardInfo.map(renderCard)}</div>;
+};
+  
+    <div>
 
       <h1>Bienvenue sur PopFigShop !</h1>
 
     {/* ////////////////////////////////// */}
 
       <div id="accueil">
-        
         <div id="actualités">
         <h2>Les dernières actualités</h2>
 
@@ -44,6 +80,8 @@ function App() {
         {/* /// */}
 
       <h2>Pop à la une</h2>
+
+     
 
       <Produit 
       source="https://placekitten.com/100/100"
@@ -75,8 +113,6 @@ function App() {
       />
 
     </div>
-    
-  );
-}
+
 
 export default App;

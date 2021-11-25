@@ -75,11 +75,6 @@ function App() {
       />
 
     </div>
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
     
   );
 }

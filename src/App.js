@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      iuygf
+      <h1>Bienvenue sur PopFigShop</h1>
     </div>
   );
 }

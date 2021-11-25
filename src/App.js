@@ -1,5 +1,9 @@
 // import logo from './logo.svg';
+
 import './App.css';
+import './components/Header'
+
+
 
 function Produit(props) {
   return <div>
@@ -22,6 +26,7 @@ function Fiche(props) {
 function App() {
   return (
     <div>
+
 
       <h1>Bienvenue sur PopFigShop !</h1>
 
@@ -70,6 +75,11 @@ function App() {
       />
 
     </div>
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
     
   );
 }

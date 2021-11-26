@@ -27,24 +27,24 @@ function Fiche(props) {
 const App =() => {
   const cardInfo = [
       {
-        image: "https://placekitten.com/100/100", 
-        title: "Test", 
-        text: "Hey" 
+        image: "https://static.fnac-static.com/multimedia/Images/FR/MDM/33/a5/e8/15246643/1505-1/tsp20201209131941/Figurine-Funko-Pop-Games-Pokemon-S1-10-Pikachu-Avant-premiere-Fnac.jpg", 
+        title: "Pikachu - Pokémon", 
+        text: "14.99€" 
       },
       {
-        image: "https://placekitten.com/100/100", 
-        title: "Test", 
-        text: "Hey" 
+        image: "https://static.fnac-static.com/multimedia/Images/FR/MDM/4f/16/e2/14816847/3756-1/tsp20211122220030/Figurine-Funko-Pop-Star-Wars-The-Mandalorian-With-The-Child-25-cm.jpg", 
+        title: "The Mandalorian with The Child - Mandalorian", 
+        text: "34.99€" 
       },
       {
-        image: "https://placekitten.com/100/100", 
-        title: "Test", 
-        text: "Hey" 
+        image: "https://static.fnac-static.com/multimedia/Images/FR/MDM/20/11/f9/16322848/3756-1/tsp20211122220523/Figurine-Funko-Pop-Spider-Man-No-Way-Home-Black-and-Gold-Suit.jpg", 
+        title: "Spiderman Black and Gold Suit - Spiderman No Way Home", 
+        text: "14.99€" 
       },
       {
-        image: "https://placekitten.com/100/100", 
-        title: "Test", 
-        text: "Hey" 
+        image: "https://static.fnac-static.com/multimedia/Images/FR/MDM/67/9c/ff/16751719/3756-1/tsp20211116111658/Figurine-Funko-Pop-Art-Series-Marvel-The-Infinity-Saga-Captain-America.jpg", 
+        title: "Captain America Funko Pop Art - Infinity War", 
+        text: "16.99€" 
       }, 
   ];
 
@@ -55,6 +55,7 @@ const App =() => {
               <Card.Body>
                 <Card.Title>{card.title}</Card.Title>
                 <Card.Text>{card.text}</Card.Text>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
               </Card.Body>
           </Card>
     );
@@ -84,7 +85,7 @@ const App =() => {
      
 
       <Produit 
-      source="https://placekitten.com/100/100"
+      source="assets/img/pop pikachu.jpg"
       name="Ash from Pokemon"
       prix="14.99€"
       />
